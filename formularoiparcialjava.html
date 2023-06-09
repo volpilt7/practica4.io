@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./funcionesparcialjava.js"></script>
+    <link rel="stylesheet" href="./estilosparcialjava.css" />
+    <title>Compra de articulos</title>
+</head>
+<header> <h1> COMPRA DE UN TIPO DE ARTICULO EN CANTIDAD</h1>
+    <div class="botones">
+    <a href="parcialjava.html"> inicio</a>
+    </div>
+</div>
+</header>
+<body>
+    <span >
+        <select name="articulo" id="articulos" required>
+            <option value="1"> Celular</option><br>
+            <option value="2"> Notebook</option><br>
+            <option value="3"> Tablet</option><br>
+        </select>
+    </span><br><br><br>
+    <span>  Cantidad:<input type="text" id="ncant" placeholder="indique la cantidad de articulos seleccionados"></span>
+<br><br><br>
+    <span>
+        <select name="marca" id="marca">
+            <option value="apple"> Apple </option>
+            <option value="samsung"> Samsung</option>
+            <option value=" nokia"> Nokia</option>
+        </select>
+    </span>
+    <br><br><br>
+    <span>
+        DESCUENTO DEL 20% <br>
+        <span> Empleado</span>
+        <input type="checkbox" id="empleado"><br>
+        <span> Militar</span>
+        <input type="checkbox" id="militar"><br>
+        <span> Pago al contado</span>
+        <input type="checkbox" id="contado"><br>
+       
+
+   <button onclick="precio()"> calcular precio</button>
+   <br><br><br><br>
+   <button onclick="resetear()"> resetear</button>
+   <br><br><br><br>
+   <div id="resultado"></div>
+        
+</body>
+</html>
